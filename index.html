@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input class="input" id="user-input" placeholder="0">
+            <br>
+            <br>
+            <button class="btn" data-number="1" onclick="press(1)">1</button>
+            <button class="btn" data-number="2" onclick="press(2)">2</button>
+            <button class="btn" data-number="3" onclick="press(3)">3</button>
+            <button style="background: linear-gradient(rgb(152, 240, 255),rgb(119, 252, 217));" class="btn" data-number="+"  onclick="press('+')">+</button>
+           
+            <button class="btn" data-number="4" onclick="press(4)">4</button>
+            <button class="btn" data-number="5" onclick="press(5)">5</button>
+            <button class="btn" data-number="6" onclick="press(6)">6</button>
+            <button style="background: linear-gradient(rgb(152, 240, 255),rgb(119, 252, 217));" class="btn" data-number="-" onclick="press('- ')">-</button>
+          
+            <button class="btn" data-number="7" onclick="press(7)">7</button>
+            <button class="btn" data-number="8" onclick="press(8)">8</button>
+            <button class="btn" data-number="9" onclick="press(9)">9</button>
+            <button style="background: linear-gradient(rgb(152, 240, 255),rgb(119, 252, 217));" class="btn" data-number="x" onclick="press('x')">x</button>
+           
+            <button class="btn" data-number="." onclick="press('.')">.</button>
+            <button class="btn" data-number="0" onclick="press(0)">0</button>
+            <button class="btn" data-number="C" onclick="erase()">C</button>
+            <button style="background: linear-gradient(rgb(152, 240, 255),rgb(119, 252, 217));" class="btn" data-number="/" onclick="press(' /')">/</button>
+            <br>
+            <br>
+            <button style="background: linear-gradient(rgb(233, 190, 124),rgb(249, 235, 129));width: 99.2%;" class="btn" data-number="=" onclick="calculate()">=</button>
+            <br>
+        </div>
+    </div>
+   
+<script src="script.js"></script> 
+</body>
+
+</html>
